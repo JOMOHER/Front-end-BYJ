@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
 
       <header className="hero">
-        <h1>Brenda y Jordi</h1>
+        <h1>Bren y Jordi</h1>
         <p>Tenemos el gusto de invitarlos a nuestro enlace matrimonial, con la bendicion de DIOS, nuestros padres, hermanos y seres queridos.</p>
          <section className="padres">
         <div className="padres-container">
