@@ -1,0 +1,337 @@
+/* Tipografías base */
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #e4e1de;
+  color: #202020;
+  margin: 0;
+  padding: 0;
+}
+
+.detalles {
+  font-size: 25px;
+}
+
+/* Encabezado principal */
+header.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background-color: #BBA383;
+  color: #5a4a42;
+}
+
+header.hero h1 {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 75px;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.padres {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.padres-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.lado {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #5a4a42;
+}
+
+.linea-vertical {
+  width: 1px;
+  height: 180px;
+  background-color: #070707;
+}
+
+@media screen and (max-width: 600px) {
+  .padres-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .linea-vertical {
+    width: 80%;
+    height: 1px;
+  }
+}
+
+header.hero p {
+  font-family: 'libre baskerville', serif;
+  font-size: 22px;
+  color: #030303;
+}
+
+.date {
+  font-size: 35px;
+  color: #0a0a0a;
+}
+
+/* Secciones generales */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'lora' cursive;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para imágenes */
+.foto-seccion {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.foto-seccion img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Ajustes para botones con icono */
+.boton-con-icono {
+  display: inline-flex;       /* inline-flex para que no ocupe toda la línea */
+  align-items: center;
+  gap: 8px;
+  margin: 20px auto;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  background-color: #8E735B;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-con-icono:hover {
+  background-color: #6f5c4c;
+}
+
+.boton-con-icono a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  max-width: fit-content;
+  gap: 6px;
+}
+
+/* Iconos dentro de boton-con-icono */
+.boton-con-icono .icono {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+/* Para el contenedor de vestimenta con dos iconos y texto */
+
+.detalles.vestimenta .icon-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #556B2F;
+}
+
+.detalles.vestimenta .icon-text-container p {
+  margin: 0 12px;
+  min-width: 150px; /* para evitar que se comprima demasiado */
+  text-align: center;
+}
+
+/* Iconos dentro del contenedor vestimenta */
+.detalles.vestimenta .icon-text-container .icono {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+.codigo-vestimenta {
+  font-family: 'Cormorant Garamond', serif; /* o el que tú prefieras */
+  font-size: 22px; /* ajusta el tamaño a tu gusto */
+  color: #050505;  /* tono elegante y sobrio */
+  font-weight: 500;
+  text-align: center;
+}
+
+.detalles.vestimenta .imagen-paleta{
+  width: 100%;
+  max-width: 400px;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.subtitulo-paleta {
+  position: relative;
+}
+
+.subtitulo-paleta::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: #bba383;
+  margin: 8px auto 0;
+}
+
+/* Para hacer que los iconos y texto respondan bien en móviles */
+@media screen and (max-width: 480px) {
+  .boton-con-icono {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .boton-con-icono .icono {
+    width: 35px;
+    height: 35px;
+  }
+
+  .detalles.vestimenta .icon-text-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .detalles.vestimenta .icon-text-container p {
+    min-width: auto;
+  }
+
+  .detalles.vestimenta .icon-text-container .icono {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.iconv {
+width: 65px;
+height: auto;
+}
+
+/* Contador de boda */
+.contador-boda {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  background-color: #e0cba2;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 40%;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contador-boda span {
+  background-color: #e0cba2;
+  padding: 10px 15px;
+  border-radius: 20px;
+  min-width: 80px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #BBA383;
+  text-align: center;
+  padding: 50px;
+  font-size: 20px;
+}
+
+/* Media Queries para responsive */
+@media screen and (max-width: 768px) {
+  header.hero {
+    padding: 60px 20px 40px;
+  }
+
+  header.hero h1 {
+    font-size: 50px;
+  }
+
+  header.hero p {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .contador-boda {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .boton-centro a {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+
+  .detalles h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: #5a4a42;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.boton-centro a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0cba2;
+  color: #5a4a42;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 10px auto;
+  max-width: 180px;
+  transition: background-color 0.3s ease;
+  gap: 8px;
+}
+
+.boton-centro a:hover {
+  background-color: #bba383;
+  color: #3e3226;
+}
+
+.foto-seccion {
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+.foto-seccion img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+
+}
