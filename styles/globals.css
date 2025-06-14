@@ -1,7 +1,7 @@
 /* Tipografías base */
 body {
-  font-family: 'Cormorant Garamond', serif;
-  background-color: #e4e1de;
+  font-family: "Cormorant Garamond", serif;
+  background-color: #f0e9b1;
   color: #202020;
   margin: 0;
   padding: 0;
@@ -11,16 +11,27 @@ body {
   font-size: 25px;
 }
 
+.button-container {
+  padding: 2rem;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
 /* Encabezado principal */
 header.hero {
   text-align: center;
   padding: 100px 20px 60px;
-  background-color: #BBA383;
+  background-color: #bba383;
   color: #5a4a42;
 }
 
 header.hero h1 {
-  font-family: 'Pinyon Script', cursive;
+  font-family: "Pinyon Script", cursive;
   font-size: 75px;
   margin: 0;
   letter-spacing: 1px;
@@ -44,7 +55,7 @@ header.hero h1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 18px;
   color: #5a4a42;
 }
@@ -68,7 +79,7 @@ header.hero h1 {
 }
 
 header.hero p {
-  font-family: 'libre baskerville', serif;
+  font-family: "libre baskerville", serif;
   font-size: 22px;
   color: #030303;
 }
@@ -85,9 +96,9 @@ section {
 }
 
 h2 {
-  font-family: 'lora' cursive;
+  font-family: "lora" cursive;
   font-size: 45px;
-  margin-bottom: 20px;
+  
 }
 
 /* Estilo para imágenes */
@@ -101,19 +112,19 @@ h2 {
   height: auto;
   border-radius: 8px;
   object-fit: cover;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Ajustes para botones con icono */
 .boton-con-icono {
-  display: inline-flex;       /* inline-flex para que no ocupe toda la línea */
+  display: inline-flex; /* inline-flex para que no ocupe toda la línea */
   align-items: center;
   gap: 8px;
   margin: 20px auto;
   font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  background-color: #8E735B;
+  background-color: #917f70;
   padding: 10px 20px;
   border-radius: 6px;
   color: #fff;
@@ -154,7 +165,7 @@ h2 {
   padding: 20px 0;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #556B2F;
+  color: #556b2f;
 }
 
 .detalles.vestimenta .icon-text-container p {
@@ -172,14 +183,14 @@ h2 {
 }
 
 .codigo-vestimenta {
-  font-family: 'Cormorant Garamond', serif; /* o el que tú prefieras */
+  font-family: "Cormorant Garamond", serif; /* o el que tú prefieras */
   font-size: 22px; /* ajusta el tamaño a tu gusto */
-  color: #050505;  /* tono elegante y sobrio */
+  color: #050505; /* tono elegante y sobrio */
   font-weight: 500;
   text-align: center;
 }
 
-.detalles.vestimenta .imagen-paleta{
+.detalles.vestimenta .imagen-paleta {
   width: 100%;
   max-width: 400px;
   margin-top: 1rem;
@@ -227,8 +238,8 @@ h2 {
 }
 
 .iconv {
-width: 65px;
-height: auto;
+  width: 65px;
+  height: auto;
 }
 
 /* Contador de boda */
@@ -236,7 +247,7 @@ height: auto;
   display: flex;
   justify-content: center;
   gap: 12px;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-size: 20px;
   background-color: #e0cba2;
   padding: 20px;
@@ -256,7 +267,7 @@ height: auto;
 
 /* Pie de página */
 footer {
-  background-color: #BBA383;
+  background-color: #bba383;
   text-align: center;
   padding: 50px;
   font-size: 20px;
@@ -291,47 +302,45 @@ footer {
   }
 
   .detalles h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  color: #5a4a42;
-  gap: 10px;
-  margin-bottom: 20px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #5a4a42;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
 
-.boton-centro a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #e0cba2;
-  color: #5a4a42;
-  padding: 10px 18px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  margin: 10px auto;
-  max-width: 180px;
-  transition: background-color 0.3s ease;
-  gap: 8px;
-}
+  .boton-centro a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0cba2;
+    color: #5a4a42;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 10px auto;
+    max-width: 180px;
+    transition: background-color 0.3s ease;
+    gap: 8px;
+  }
 
-.boton-centro a:hover {
-  background-color: #bba383;
-  color: #3e3226;
-}
+  .boton-centro a:hover {
+    background-color: #bba383;
+    color: #3e3226;
+  }
 
-.foto-seccion {
-  margin: 30px auto;
-  max-width: 600px;
-}
+  .foto-seccion {
+    margin: 30px auto;
+    max-width: 600px;
+  }
 
-.foto-seccion img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  object-fit: cover;
-}
-
-
+  .foto-seccion img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
 }
